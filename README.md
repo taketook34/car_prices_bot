@@ -7,7 +7,7 @@ This is a recommendation system for determining the price of a car based on exis
 ## Installation
 
 <pre>
-`git clone https://github.com/car_prices_bot.git`
+git clone https://github.com/car_prices_bot.git
 </pre>
 
 Required libraries: requests, bs4, pandas, scikit-learn, json, aiogram.
@@ -17,9 +17,9 @@ Required libraries: requests, bs4, pandas, scikit-learn, json, aiogram.
 Here you can see example of work
 Running with:
 <pre>
-'cd car_prices'
+cd car_prices
 
-'python bot.py'
+python bot.py
 </pre>
 
 ![Typing characteristic](readmeimages/firstscree.png)
