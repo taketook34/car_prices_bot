@@ -1,1 +1,1 @@
-BOT_TOKEN = 'my password'
+BOT_TOKEN = '6457326417:AAGzOpYGr6ysMql9Z4a236y2C-2beabatag'

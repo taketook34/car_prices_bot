@@ -2,7 +2,7 @@ import json
 import pandas
 from sklearn.linear_model import LinearRegression
 from .get_data import parser_path
-#parser_path = '.'
+
 
 class NotExistCarsError(Exception):
     def __init__(self, message):

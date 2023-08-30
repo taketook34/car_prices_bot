@@ -12,10 +12,7 @@ parser_path = 'parser'
 site_url = 'https://auto.ria.com/uk/car'
 
 
-# class ElectroCarError(Exception):
-#     def __init__(self, message):
-#         self.message = message
-#         super().__init__(self.message)
+
 
 class AntiParserError(Exception):
     def __init__(self, message):
@@ -33,8 +30,7 @@ def get_data(mark='kia', model='sorento', page_number=20, file_dir='parser'):
         url = main_url + part_page
         response = requests.get(url)
         # Проверяем успешность запроса
-        # print(f'PAGE NUMBER {i}')
-        # print('==='*20)
+
         if response.status_code == 200:
             page_content = response.content
             soup = BeautifulSoup(page_content, 'html.parser')
@@ -99,7 +95,7 @@ def get_data(mark='kia', model='sorento', page_number=20, file_dir='parser'):
                         # raise ElectroCarError('Введена модель електрокара')
                         continue
                 
-                #print('=='*20)
+
                 
             # Получаем содержимое страницы
         elif response.status_code == 404:
