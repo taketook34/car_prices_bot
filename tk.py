@@ -1,1 +1,1 @@
-BOT_TOKEN = 'tokeen of bot from telegram'
+BOT_TOKEN = 'YOUR TELEGRAM API KEY'

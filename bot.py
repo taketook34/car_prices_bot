@@ -3,7 +3,7 @@ from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from aiogram.dispatcher.filters.state import StatesGroup, State
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, ReplyKeyboardRemove
 
-from parser import get_data, get_price
+import get_page, get_price
 from datetime import datetime
 from tk import BOT_TOKEN
 import requests, os, asyncio
@@ -13,11 +13,11 @@ bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher(bot=bot, storage=storage)
 
 gearbox_keyboard = ReplyKeyboardMarkup()
-for i in get_data.gearbox_converter.keys():
+for i in get_page.gearbox_converter.keys():
     gearbox_keyboard.add(KeyboardButton(i))
 
 fueltype_keyborad = ReplyKeyboardMarkup()
-for i in get_data.fueltype_list:
+for i in get_page.fueltype_list:
     fueltype_keyborad.add(KeyboardButton(i))
 
 
@@ -53,8 +53,6 @@ async def simple_message(message):
     await message.answer('Вопрос 1. Фирма автомобиля (на английском)?')
     await AnalyzForm.mark.set()
 
-
-
 @dp.message_handler(lambda msg: msg.text.isascii(), state=AnalyzForm.mark)
 async def mark_question(message, state):
     async with state.proxy() as data:
@@ -89,10 +87,10 @@ async def engine_v_question(message, state):
     await message.answer('Вопрос 5. Какая у вас коробка передач (выбрать из списка)?', reply_markup=gearbox_keyboard)
     await AnalyzForm.next()
 
-@dp.message_handler(lambda msg: msg.text in list(get_data.gearbox_converter.keys()), state=AnalyzForm.gearbox_type)
+@dp.message_handler(lambda msg: msg.text in list(get_page.gearbox_converter.keys()), state=AnalyzForm.gearbox_type)
 async def gearbox_question(message, state):
     async with state.proxy() as data:
-        data['gearbox_type'] = get_data.gearbox_converter[message.text]
+        data['gearbox_type'] = get_page.gearbox_converter[message.text]
     
     await message.answer('Вопрос 6. Какого года модель вашего авто (например 2014)?', reply_markup=ReplyKeyboardRemove())
     await AnalyzForm.next()
@@ -106,7 +104,7 @@ async def year_question(message, state):
     await message.answer('Теперь последний вопрос 7. Тип бензина для двигателя (выбрать из списка)?', reply_markup=fueltype_keyborad)
     await AnalyzForm.next()
 
-@dp.message_handler(lambda msg: msg.text in get_data.fueltype_list, state=AnalyzForm.fueltype)
+@dp.message_handler(lambda msg: msg.text in get_page.fueltype_list, state=AnalyzForm.fueltype)
 async def fueltype_question(message, state):
 
     async with state.proxy() as data:
@@ -114,32 +112,22 @@ async def fueltype_question(message, state):
         data['fueltype'] = message.text
         data['mark'] = data['mark'].replace(' ', '-').lower()
         data['model'] = data['model'].replace(' ', '-').lower()
-        response = requests.get('{}/{}/{}/'.format(get_data.site_url ,data['mark'], data['model']))
+        response = requests.get('{}/{}/{}/'.format(get_page.site_url ,data['mark'], data['model']))
     
         if response.status_code == 200:
             await message.answer('Вопросы окончены и получены. Начинаем обработку ...')
-            if os.path.isfile('{}/{}_{}.json'.format(get_data.parser_path,  data['mark'], data['model'])):
+            if os.path.isfile('{}/{}_{}.json'.format(get_page.parser_path,  data['mark'], data['model'])):
                 await analyze_data(message, data)
 
             else:
-                try:
-                    get_data.get_data(mark=data['mark'], model=data['model'], page_number=15)
-                except get_data.AntiParserError as n:
-                    await message.answer(n.message)
-                    get_data.get_data(mark=data['mark'], model=data['model'], page_number=15)
-                    await analyze_data(message, data)
-                
-                # except get_data.ElectroCarError as elc:
-                #     await message.answer(elc.message)
-
-                else:
-                    await analyze_data(message, data)
+                get_page.get_file(start=1, file_dir='parser', mark=data['mark'], model=data['model'])
+                await analyze_data(message, data)
                        
         else:
             await messgae.answer('Марка или модель автомобиля введены неправильно, пожалуйста перевведите данные', reply_markup=ReplyKeyboardRemove())
         
 async def delete_old_json_files():
-    dir_path = get_data.parser_path
+    dir_path = get_page.parser_path
     while True:
         # Получаем список файлов в директории, сортируем по времени создания
         files = sorted(os.listdir(dir_path), key=lambda f: os.path.getctime(os.path.join(dir_path, f)))

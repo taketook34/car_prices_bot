@@ -1,7 +1,7 @@
 import json
 import pandas
 from sklearn.linear_model import LinearRegression
-from .get_data import parser_path
+
 
 
 class NotExistCarsError(Exception):
@@ -17,10 +17,10 @@ class ElectroCarError(Exception):
 
 
 class PriceAnalyzer:
-    def __init__(self, mark, model, fueltype):
+    def __init__(self, mark, model, fueltype, folder_dir='parser'):
         self.fueltype = fueltype
 
-        with open(f'{parser_path}/{mark}_{model}.json', 'r') as file:
+        with open(f'{folder_dir}/{mark}_{model}.json', 'r') as file:
             data = json.load(file)
             main_df = pandas.DataFrame(data)
             file.close()
