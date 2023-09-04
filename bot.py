@@ -42,7 +42,7 @@ async def analyze_data(message, data):
     
     else:
         result = car.get_predict(input_data=[data['oddmeter'], data['engine_V'], data['gearbox_type'], data['years']])
-        await message.answer(f'{round(result[0], 2)} - рекомендуемая цена ')
+        await message.answer(f'{round(result[0], 2)}$ - рекомендуемая цена ')
 
 
 @dp.message_handler(commands=['start'], state='*')
@@ -110,9 +110,11 @@ async def fueltype_question(message, state):
     async with state.proxy() as data:
         await state.finish()
         data['fueltype'] = message.text
+        if message.text == get_page.fueltype_list[-1]:
+            data['engine_V'] = 1
         data['mark'] = data['mark'].replace(' ', '-').lower()
         data['model'] = data['model'].replace(' ', '-').lower()
-        response = requests.get('{}/{}/{}/'.format(get_page.site_url ,data['mark'], data['model']))
+        response = requests.get('{}/{}/{}/'.format(get_page.site_url ,data['mark'], data['model'])) #Тестовый запрос
     
         if response.status_code == 200:
             await message.answer('Вопросы окончены и получены. Начинаем обработку ...')

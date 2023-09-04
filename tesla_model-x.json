@@ -1,0 +1,922 @@
+[
+    {
+        "year": 4,
+        "price": 57500,
+        "oddmeter": 51000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 7,
+        "price": 42900,
+        "oddmeter": 98000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 3,
+        "price": 65800,
+        "oddmeter": 58000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 7,
+        "price": 34900,
+        "oddmeter": 79000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 6,
+        "price": 34999,
+        "oddmeter": 79000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 3,
+        "price": 76900,
+        "oddmeter": 67000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 6,
+        "price": 33999,
+        "oddmeter": 152000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 6,
+        "price": 45000,
+        "oddmeter": 109000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 7,
+        "price": 38000,
+        "oddmeter": 106000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 5,
+        "price": 63500,
+        "oddmeter": 35000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 5,
+        "price": 62000,
+        "oddmeter": 99000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 7,
+        "price": 45000,
+        "oddmeter": 86000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 4
+    },
+    {
+        "year": 7,
+        "price": 43000,
+        "oddmeter": 150000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 4,
+        "price": 70000,
+        "oddmeter": 32000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 5,
+        "price": 40850,
+        "oddmeter": 204000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 3,
+        "price": 61900,
+        "oddmeter": 60000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 4,
+        "price": 48000,
+        "oddmeter": 53000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 5,
+        "price": 54000,
+        "oddmeter": 47000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 5
+    },
+    {
+        "year": 5,
+        "price": 37777,
+        "oddmeter": 80000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 5,
+        "price": 68000,
+        "oddmeter": 70000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 5,
+        "price": 40999,
+        "oddmeter": 145000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 6,
+        "price": 42700,
+        "oddmeter": 77000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 6,
+        "price": 42000,
+        "oddmeter": 68000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 7,
+        "price": 32999,
+        "oddmeter": 178000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 4,
+        "price": 41900,
+        "oddmeter": 43000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 5,
+        "price": 59900,
+        "oddmeter": 45000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 7,
+        "price": 45000,
+        "oddmeter": 95000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 7,
+        "price": 39500,
+        "oddmeter": 153000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 6,
+        "price": 48000,
+        "oddmeter": 97000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 6,
+        "price": 46000,
+        "oddmeter": 98000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 3,
+        "price": 64490,
+        "oddmeter": 33000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 4,
+        "price": 72500,
+        "oddmeter": 31000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 6,
+        "price": 41999,
+        "oddmeter": 118000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 5,
+        "price": 39900,
+        "oddmeter": 33000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 7,
+        "price": 55000,
+        "oddmeter": 57000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 0,
+        "price": 124000,
+        "oddmeter": 1000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 3,
+        "price": 62900,
+        "oddmeter": 36000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 7,
+        "price": 35500,
+        "oddmeter": 71000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 3,
+        "price": 57000,
+        "oddmeter": 50000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 6,
+        "price": 36500,
+        "oddmeter": 149000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 3,
+        "price": 57000,
+        "oddmeter": 74000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 5,
+        "price": 39999,
+        "oddmeter": 39000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 5,
+        "price": 59000,
+        "oddmeter": 39000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 4,
+        "price": 52900,
+        "oddmeter": 16000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 7,
+        "price": 54999,
+        "oddmeter": 60000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 3,
+        "price": 84092,
+        "oddmeter": 20000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 6,
+        "price": 40200,
+        "oddmeter": 109000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 6,
+        "price": 49500,
+        "oddmeter": 55000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 6,
+        "price": 43500,
+        "oddmeter": 80000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 7,
+        "price": 35998,
+        "oddmeter": 132000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 3,
+        "price": 71000,
+        "oddmeter": 19000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 5,
+        "price": 67000,
+        "oddmeter": 12000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 6,
+        "price": 49999,
+        "oddmeter": 93000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 1,
+        "price": 48600,
+        "oddmeter": 3000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 4
+    },
+    {
+        "year": 7,
+        "price": 35999,
+        "oddmeter": 134000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 1,
+        "price": 95000,
+        "oddmeter": 17000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 3,
+        "price": 67500,
+        "oddmeter": 8000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 6,
+        "price": 63200,
+        "oddmeter": 116000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 3,
+        "price": 72500,
+        "oddmeter": 32000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 3,
+        "price": 59999,
+        "oddmeter": 30000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 5,
+        "price": 49000,
+        "oddmeter": 110000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 4,
+        "price": 61000,
+        "oddmeter": 75000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 5,
+        "price": 48500,
+        "oddmeter": 79000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 7,
+        "price": 45800,
+        "oddmeter": 70000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 3,
+        "price": 101500,
+        "oddmeter": 24000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 7,
+        "price": 55000,
+        "oddmeter": 97000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 4,
+        "price": 61500,
+        "oddmeter": 21000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 6,
+        "price": 54900,
+        "oddmeter": 91000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 5,
+        "price": 43999,
+        "oddmeter": 58000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 5,
+        "price": 60000,
+        "oddmeter": 24000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 3,
+        "price": 67777,
+        "oddmeter": 13000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 6,
+        "price": 45500,
+        "oddmeter": 94000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 6,
+        "price": 39600,
+        "oddmeter": 112000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 5,
+        "price": 62500,
+        "oddmeter": 1000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 1,
+        "price": 105000,
+        "oddmeter": 12000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 6,
+        "price": 43700,
+        "oddmeter": 141000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 7,
+        "price": 36000,
+        "oddmeter": 160000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 6,
+        "price": 56655,
+        "oddmeter": 77000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 7,
+        "price": 45000,
+        "oddmeter": 100000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 6,
+        "price": 39600,
+        "oddmeter": 114000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 7,
+        "price": 45900,
+        "oddmeter": 101000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 6,
+        "price": 32300,
+        "oddmeter": 186000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 5,
+        "price": 53000,
+        "oddmeter": 103000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 6,
+        "price": 51999,
+        "oddmeter": 80000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 7,
+        "price": 49000,
+        "oddmeter": 127000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 7,
+        "price": 39999,
+        "oddmeter": 82000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 5,
+        "price": 49900,
+        "oddmeter": 36000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 6,
+        "price": 48953,
+        "oddmeter": 121000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 6,
+        "price": 37000,
+        "oddmeter": 84000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 3,
+        "price": 78500,
+        "oddmeter": 15000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 4,
+        "price": 52999,
+        "oddmeter": 48000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 3,
+        "price": 72990,
+        "oddmeter": 56000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 6,
+        "price": 36000,
+        "oddmeter": 92000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 5,
+        "price": 77000,
+        "oddmeter": 115000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 6,
+        "price": 45000,
+        "oddmeter": 113000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 4,
+        "price": 67000,
+        "oddmeter": 27000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 3,
+        "price": 59900,
+        "oddmeter": 43000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 7,
+        "price": 33999,
+        "oddmeter": 68000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 7,
+        "price": 41900,
+        "oddmeter": 94000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 3,
+        "price": 73000,
+        "oddmeter": 87000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 6,
+        "price": 36990,
+        "oddmeter": 104000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 5,
+        "price": 41700,
+        "oddmeter": 42000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 4,
+        "price": 40700,
+        "oddmeter": 71000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 5,
+        "price": 37900,
+        "oddmeter": 40000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 5,
+        "price": 43500,
+        "oddmeter": 68000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 3,
+        "price": 74500,
+        "oddmeter": 9000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 7,
+        "price": 35999,
+        "oddmeter": 120000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 7,
+        "price": 41500,
+        "oddmeter": 226000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 5,
+        "price": 54500,
+        "oddmeter": 82000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 4,
+        "price": 48800,
+        "oddmeter": 58000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 3,
+        "price": 44900,
+        "oddmeter": 130000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 5,
+        "price": 44000,
+        "oddmeter": 25000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 7,
+        "price": 41900,
+        "oddmeter": 75000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 5,
+        "price": 42600,
+        "oddmeter": 95000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    },
+    {
+        "year": 5,
+        "price": 49900,
+        "oddmeter": 101000,
+        "fuletype": "Електро",
+        "engine_V": 1,
+        "transmission": 2
+    }
+]

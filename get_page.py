@@ -5,7 +5,7 @@ from datetime import datetime
 import time
 
 
-fueltype_list = ['Дизель', 'Бензин', 'Газ / Бензин', 'Гібрид']
+fueltype_list = ['Дизель', 'Бензин', 'Газ / Бензин', 'Гібрид', 'Електро'] #Последнее должно быть електро
 gearbox_converter = {'Автомат': 2, 'Ручна / Механіка': 1, 'Типтронік':3, 'Варіатор': 4, 'Робот': 5, }
 
 parser_path = 'parser'
@@ -52,47 +52,49 @@ def get_data(mark='kia', model='sorento', number=1, file_dir='.'):
                 #print(year)
 
                 engine_ftype_oddmeter_gearbox = engine_ftype_oddmeter_gearbox.strip()
-                if 'Електро' not in engine_ftype_oddmeter_gearbox:
-                    year = year.strip()
-                    price = price.strip()
+                #if 'Електро' not in engine_ftype_oddmeter_gearbox:
+                year = year.strip()
+                price = price.strip()
 
+                for_adding['year'] = datetime.now().year - int(year[-4:])           #ГОД
+                for_adding['price'] = int(''.join(price.split()))                  #Цена
 
-
-                    for_adding['year'] = datetime.now().year - int(year[-4:])           #ГОД
-                    for_adding['price'] = int(''.join(price.split()))                  #Цена
-
-                    efog_lst = engine_ftype_oddmeter_gearbox.split('   ')
-                    if efog_lst[0] == 'без пробігу':
-                        for_adding['oddmeter'] = 0
-                    else:
-                        for_adding['oddmeter'] = int(efog_lst[0].split(' ')[0])*1000                          #пробег
-                    work_lst = efog_lst[2].replace(',', '').split(' ')
-
-                    if len(work_lst) < 3:
-                        continue
-                    elif len(work_lst) == 5:
-                        for_adding['fueltype'] = ''.join(work_lst[:3])
-                        for_adding['engine_V'] = float(work_lst[3])
-
-
-                    else:
-                        try:
-                            for_adding['engine_V'] = float(work_lst[1])         #Обьем двигателя
-                        except ValueError as v:
-                            continue
-                        else:
-                            for_adding['fueltype'] = work_lst[0]         #тип топлива, не используется при обучении
-
-                        
-                    if gearbox_converter.get(efog_lst[-1]):
-                        for_adding['transmission'] = gearbox_converter[efog_lst[-1]]  #Коробка передач
-                    else:
-                        continue                
-
-                    data_container.append(for_adding)
+                efog_lst = engine_ftype_oddmeter_gearbox.split('   ')
+                if efog_lst[0] == 'без пробігу':
+                    for_adding['oddmeter'] = 0
                 else:
-                        # raise ElectroCarError('Введена модель електрокара')
-                    continue
+                    for_adding['oddmeter'] = int(efog_lst[0].split(' ')[0])*1000                          #пробег
+                work_lst = efog_lst[2].replace(',', '').split(' ')
+
+                if len(work_lst) < 3:
+                    if len(work_lst) == 1:
+                        #Случай с електрокаром
+                        for_adding['fueltype'] = work_lst[0]
+                        for_adding['engine_V'] = 1
+                    else:
+                        continue
+                elif len(work_lst) == 5:
+
+                    for_adding['fueltype'] = ''.join(work_lst[:3])
+                    for_adding['engine_V'] = float(work_lst[3])
+                else:
+                    try:
+                        for_adding['engine_V'] = float(work_lst[1])         #Обьем двигателя
+                    except ValueError as v:
+                        continue
+                    else:
+                        for_adding['fueltype'] = work_lst[0]         #тип топлива, не используется при обучении
+
+                    
+                if gearbox_converter.get(efog_lst[-1]):
+                    for_adding['transmission'] = gearbox_converter[efog_lst[-1]]  #Коробка передач
+                else:
+                    continue                
+
+                data_container.append(for_adding)
+                # else:
+                #         # raise ElectroCarError('Введена модель електрокара')
+                #     continue
             # Получаем содержимое страницы
     elif response.status_code == 404:
         raise NameError('End of pages!')
@@ -121,13 +123,14 @@ def get_file(start=1,  file_dir='.', mark='honda', model='civic'):
             break
 
         else:
-            print(f'Page worked {i}')
+            #print(f'Page worked {i}')
+            pass
     
     with open(f'{file_dir}/{mark}_{model}.json', 'w') as file:
         '''Сменить на переменные'''
         json.dump(data_container, file, indent=4, ensure_ascii=False)
 
-#get_file(start=1, mark='honda', model='civic')
+#get_file(start=1, mark='tesla', model='model-x')
 '''
 
 1. Год выпуска

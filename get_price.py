@@ -25,8 +25,8 @@ class PriceAnalyzer:
             main_df = pandas.DataFrame(data)
             file.close()
         
-        if main_df.empty:
-            raise ElectroCarError('Введен електрокар')
+        # if main_df.empty:
+        #     raise ElectroCarError('Введен електрокар')
         
         if self.fueltype not in main_df['fueltype'].unique():
             raise NotExistCarsError('Нету даной модели с заданым типом топлива')
